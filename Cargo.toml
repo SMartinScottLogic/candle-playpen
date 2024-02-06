@@ -1,0 +1,20 @@
+[workspace]
+resolver = "2"
+members = [
+    "utils",
+    "stable-diffusion"
+]
+
+[workspace.dependencies]
+utils = { path = "./utils", version = "0.1.0" }
+anyhow = "1.0.79"
+clap = "4.4.18"
+image = { version = "0.24.8", default-features = false, features = ["jpeg", "png"] }
+tracing = "0.1.40"
+tracing-chrome = "0.7.1"
+tracing-subscriber = "0.3.18"
+
+candle-core = "0.3.3"
+candle-transformers = "0.3.3"
+hf-hub = "0.3.2"
+tokenizers = "0.15.1"
